@@ -10,11 +10,16 @@ import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-# ── Load Model ─────────────────────────────────────────
-@st.cache_resource                        # loads model only once
+
+
+
+@st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('cat Vs dod model.h5')
-    return model
+    path = hf_hub_download(
+        repo_id="Muthuswamy/catvsdog1",  # 👈 your path
+        filename="model.h5"
+    )
+    return tensorflow.keras.models.load_model(path)
 
 model = load_model()
 

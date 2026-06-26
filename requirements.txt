@@ -3,6 +3,6 @@ Pillow
 streamlit
 matplotlib
 numpy
-
+huggingface_hub
 requests
 opencv-python-headless

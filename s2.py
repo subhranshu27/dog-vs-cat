@@ -5,7 +5,7 @@ import numpy as np
 import requests
 from PIL import Image
 from io import BytesIO
-import tensorflow as tf
+import tensorflow 
 import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'

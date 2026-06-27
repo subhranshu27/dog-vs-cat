@@ -17,7 +17,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 def load_model():
     path = hf_hub_download(
         repo_id="Muthuswamy/catvsdog1",  # 👈 your path
-        filename="model.h5"
+        filename="cat Vs dod model.h5"
     )
     return tensorflow.keras.models.load_model(path)
 
